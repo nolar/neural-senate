@@ -103,9 +103,9 @@ end;
 procedure writeSenator(s:word);
 var a:word;
 begin
- writeln('ë•≠†‚Æ‡ #',s);
+ writeln('–°–µ–Ω–∞—Ç–æ—Ä #',s);
  for a:=1 to askSize do
-  writeln(a,'© ·®¨¢Æ´ •·‚Ï "',ask^[a].letter,'"');
+  writeln(a,'–π —Å–∏–º–≤–æ–ª –µ—Å—Ç—å "',ask^[a].letter,'"');
  if(s=senatorCount)then
   wrtln('=',DividerSize) else
   wrtln('-',DividerSize);
@@ -116,7 +116,7 @@ var a,b,i:word;
     c,r:array[1..MaxTblSize]of word;
     senRight:array[1..MaxSenatorCount]of boolean;
 begin
- writeln('àíéÉé:');
+ writeln('–ò–¢–û–ì–û:');
 
  for a:=1 to askSize do
   begin
@@ -129,7 +129,7 @@ begin
     if(c[b]>c[i])then
      i:=b;
    r[a]:=i;
-   writeln(a,'© ·®¨¢Æ´ •·‚Ï "',table^[i].letter,'":',(c[i]*100 div senatorCount):3,'%');
+   writeln(a,'–π —Å–∏–º–≤–æ–ª –µ—Å—Ç—å "',table^[i].letter,'":',(c[i]*100 div senatorCount):3,'%');
   end;
  wrtln('-',DividerSize);
  for a:=1 to senatorCount do
@@ -138,6 +138,6 @@ begin
    for b:=1 to askSize do
     senRight[a]:=senRight[a] and (senate[a,b]=r[b]);
    if(senRight[a])then
-    writeln('ë•≠†‚Æ‡ #',a,' °Î´ Ø‡†¢');
+    writeln('–°–µ–Ω–∞—Ç–æ—Ä #',a,' –±—ã–ª –ø—Ä–∞–≤');
   end;
 end;
